@@ -124,6 +124,19 @@ leadingEdge/fast:
 	$(MAKE) -f CMakeFiles/leadingEdge.dir/build.make CMakeFiles/leadingEdge.dir/build
 .PHONY : leadingEdge/fast
 
+#=============================================================================
+# Target rules for targets named ok
+
+# Build rule for target.
+ok: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ok
+.PHONY : ok
+
+# fast build rule for target.
+ok/fast:
+	$(MAKE) -f CMakeFiles/ok.dir/build.make CMakeFiles/ok.dir/build
+.PHONY : ok/fast
+
 GoldenGateBackGround.o: GoldenGateBackGround.cpp.o
 .PHONY : GoldenGateBackGround.o
 
@@ -172,6 +185,30 @@ leadingEdge.cpp.s:
 	$(MAKE) -f CMakeFiles/leadingEdge.dir/build.make CMakeFiles/leadingEdge.dir/leadingEdge.cpp.s
 .PHONY : leadingEdge.cpp.s
 
+ok.o: ok.cpp.o
+.PHONY : ok.o
+
+# target to build an object file
+ok.cpp.o:
+	$(MAKE) -f CMakeFiles/ok.dir/build.make CMakeFiles/ok.dir/ok.cpp.o
+.PHONY : ok.cpp.o
+
+ok.i: ok.cpp.i
+.PHONY : ok.i
+
+# target to preprocess a source file
+ok.cpp.i:
+	$(MAKE) -f CMakeFiles/ok.dir/build.make CMakeFiles/ok.dir/ok.cpp.i
+.PHONY : ok.cpp.i
+
+ok.s: ok.cpp.s
+.PHONY : ok.s
+
+# target to generate assembly for a file
+ok.cpp.s:
+	$(MAKE) -f CMakeFiles/ok.dir/build.make CMakeFiles/ok.dir/ok.cpp.s
+.PHONY : ok.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -181,6 +218,7 @@ help:
 	@echo "... GoldenGateBackGround"
 	@echo "... edit_cache"
 	@echo "... leadingEdge"
+	@echo "... ok"
 	@echo "... rebuild_cache"
 	@echo "... GoldenGateBackGround.o"
 	@echo "... GoldenGateBackGround.i"
@@ -188,6 +226,9 @@ help:
 	@echo "... leadingEdge.o"
 	@echo "... leadingEdge.i"
 	@echo "... leadingEdge.s"
+	@echo "... ok.o"
+	@echo "... ok.i"
+	@echo "... ok.s"
 .PHONY : help
 
 
