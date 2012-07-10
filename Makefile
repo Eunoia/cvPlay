@@ -99,41 +99,78 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named DisplayImage
+# Target rules for targets named GoldenGateBackGround
 
 # Build rule for target.
-DisplayImage: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 DisplayImage
-.PHONY : DisplayImage
+GoldenGateBackGround: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 GoldenGateBackGround
+.PHONY : GoldenGateBackGround
 
 # fast build rule for target.
-DisplayImage/fast:
-	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/build
-.PHONY : DisplayImage/fast
+GoldenGateBackGround/fast:
+	$(MAKE) -f CMakeFiles/GoldenGateBackGround.dir/build.make CMakeFiles/GoldenGateBackGround.dir/build
+.PHONY : GoldenGateBackGround/fast
 
-DisplayImage.o: DisplayImage.cpp.o
-.PHONY : DisplayImage.o
+#=============================================================================
+# Target rules for targets named leadingEdge
+
+# Build rule for target.
+leadingEdge: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 leadingEdge
+.PHONY : leadingEdge
+
+# fast build rule for target.
+leadingEdge/fast:
+	$(MAKE) -f CMakeFiles/leadingEdge.dir/build.make CMakeFiles/leadingEdge.dir/build
+.PHONY : leadingEdge/fast
+
+GoldenGateBackGround.o: GoldenGateBackGround.cpp.o
+.PHONY : GoldenGateBackGround.o
 
 # target to build an object file
-DisplayImage.cpp.o:
-	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/DisplayImage.cpp.o
-.PHONY : DisplayImage.cpp.o
+GoldenGateBackGround.cpp.o:
+	$(MAKE) -f CMakeFiles/GoldenGateBackGround.dir/build.make CMakeFiles/GoldenGateBackGround.dir/GoldenGateBackGround.cpp.o
+.PHONY : GoldenGateBackGround.cpp.o
 
-DisplayImage.i: DisplayImage.cpp.i
-.PHONY : DisplayImage.i
+GoldenGateBackGround.i: GoldenGateBackGround.cpp.i
+.PHONY : GoldenGateBackGround.i
 
 # target to preprocess a source file
-DisplayImage.cpp.i:
-	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/DisplayImage.cpp.i
-.PHONY : DisplayImage.cpp.i
+GoldenGateBackGround.cpp.i:
+	$(MAKE) -f CMakeFiles/GoldenGateBackGround.dir/build.make CMakeFiles/GoldenGateBackGround.dir/GoldenGateBackGround.cpp.i
+.PHONY : GoldenGateBackGround.cpp.i
 
-DisplayImage.s: DisplayImage.cpp.s
-.PHONY : DisplayImage.s
+GoldenGateBackGround.s: GoldenGateBackGround.cpp.s
+.PHONY : GoldenGateBackGround.s
 
 # target to generate assembly for a file
-DisplayImage.cpp.s:
-	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/DisplayImage.cpp.s
-.PHONY : DisplayImage.cpp.s
+GoldenGateBackGround.cpp.s:
+	$(MAKE) -f CMakeFiles/GoldenGateBackGround.dir/build.make CMakeFiles/GoldenGateBackGround.dir/GoldenGateBackGround.cpp.s
+.PHONY : GoldenGateBackGround.cpp.s
+
+leadingEdge.o: leadingEdge.cpp.o
+.PHONY : leadingEdge.o
+
+# target to build an object file
+leadingEdge.cpp.o:
+	$(MAKE) -f CMakeFiles/leadingEdge.dir/build.make CMakeFiles/leadingEdge.dir/leadingEdge.cpp.o
+.PHONY : leadingEdge.cpp.o
+
+leadingEdge.i: leadingEdge.cpp.i
+.PHONY : leadingEdge.i
+
+# target to preprocess a source file
+leadingEdge.cpp.i:
+	$(MAKE) -f CMakeFiles/leadingEdge.dir/build.make CMakeFiles/leadingEdge.dir/leadingEdge.cpp.i
+.PHONY : leadingEdge.cpp.i
+
+leadingEdge.s: leadingEdge.cpp.s
+.PHONY : leadingEdge.s
+
+# target to generate assembly for a file
+leadingEdge.cpp.s:
+	$(MAKE) -f CMakeFiles/leadingEdge.dir/build.make CMakeFiles/leadingEdge.dir/leadingEdge.cpp.s
+.PHONY : leadingEdge.cpp.s
 
 # Help Target
 help:
@@ -141,12 +178,16 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... DisplayImage"
+	@echo "... GoldenGateBackGround"
 	@echo "... edit_cache"
+	@echo "... leadingEdge"
 	@echo "... rebuild_cache"
-	@echo "... DisplayImage.o"
-	@echo "... DisplayImage.i"
-	@echo "... DisplayImage.s"
+	@echo "... GoldenGateBackGround.o"
+	@echo "... GoldenGateBackGround.i"
+	@echo "... GoldenGateBackGround.s"
+	@echo "... leadingEdge.o"
+	@echo "... leadingEdge.i"
+	@echo "... leadingEdge.s"
 .PHONY : help
 
 

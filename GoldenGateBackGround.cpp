@@ -1,3 +1,5 @@
+//This is an attempt to detect the background of an image, and 
+//replace it with the golden gate bridge
 #include <iostream> // for standard I/O
 #include <cmath> // for math
 #include <string>   // for strings
@@ -8,16 +10,14 @@
 #include <opencv2/highgui/highgui.hpp>  // OpenCV window I/O
 using namespace std;
 using namespace cv;
-//=saturate_cast<uchar>( alpha*( frame.at<Vec3b>(y,x)[c] ) + beta );
 bool within(int x,int y,int w){
 	//30,34, 10
 	w=1;
 	if((x-w)>y && y<(x+w))
-		return !false;
-	return !true;
+		return true;
+	return false;
 }
 int main(int argc, char *argv[], char *window_name) {
-	//Mat history[1000];
 	VideoCapture captRefrnc(0);
 	if ( !captRefrnc.isOpened() ) return -1;
 	Mat frame,prior,toDisp,unMol,bg;
